@@ -1,0 +1,59 @@
+.content {
+  width: 20rem;
+  height: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #efefef;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+
+  &__header {
+    text-transform: capitalize;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 5rem;
+      height: 0.2rem;
+      content: "";
+      background-color: #c50000;
+      transform: translateX(-50%);
+    }
+
+    span {
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      line-height: 3em;
+      padding-left: 0.25em;
+      color: rgba(0, 0, 0, 0.4);
+      padding-bottom: 10px;
+      display: block;
+      font-size: 0.5em;
+      line-height: 1.3;
+    }
+  }
+
+  &__operations {
+    padding-top: 2rem;
+  }
+
+  &__operation {
+    margin: 0.5rem auto;
+  }
+}
